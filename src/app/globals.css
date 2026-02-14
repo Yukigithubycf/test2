@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-pacifico);
+  --font-body: var(--font-quicksand);
+}
+
+:root {
+  --foreground: #4a1d2f;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); 
+  /* Fallback or specific gradient as per PRD "Romantic Pink & Red" */
+  /* Actually let's use the one from PRD description if possible, or a nice one. */
+  /* PRD: Romantic pink gradient (#ff6b9d to #ff8fab) and red gradient (#ff4757 to #ff3838) */
+  /* Let's make the main background a soft pink gradient */
+  background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), cursive;
+}
